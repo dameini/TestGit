@@ -43,13 +43,12 @@ def get_tianqi(url):
     return liebiao
 
 
-def send_email(receiver, msg):
+def send_email(sender, receiver, msg):
     # 发送邮件
     # 收件人
     receiver = receiver
 
     #发件人
-    sender = '1029177123@qq.com'
 
     mail_title = '小可爱，请查收今天以及往后15天的天气预报，愿你三冬暖，春不寒'
     mail_body = str(msg)
@@ -91,14 +90,18 @@ def send_email(receiver, msg):
 # receiver_list = 'XXX@qq.com'
 # tb = get_Data(url1)  # 获得每一个用户的数据
 # send_mail(tb, receiver_list)  # 发送邮件
+chengshi = 1
 
-
-url = "https://tianqi.so.com/weather/101270110"  # 新津区天气
-tq = get_tianqi(url)
-jint = '今天天气'
-# msg1 = msg.add_row(jint + msg)
-# print(msg1)
-send_email('1101165851@qq.com', tq)
-
+if chengshi:
+    url = "https://tianqi.so.com/weather/101270110"  # 新津区天气
+    tq = get_tianqi(url)
+    jint = '今天天气'
+    # msg1 = msg.add_row(jint + msg)
+    # print(msg1)
+    sender = input('输入发件人邮箱')
+    send_email('1101165851@qq.com', tq)
+else:
+    url = "https://tianqi.so.com/weather/101270102"  # 龙泉
+    tq = get_tianqi(url)
 
 
