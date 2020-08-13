@@ -104,4 +104,3 @@ else:
     url = "https://tianqi.so.com/weather/101270102"  # 龙泉
     tq = get_tianqi(url)
 
-
