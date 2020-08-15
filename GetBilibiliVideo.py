@@ -63,12 +63,13 @@ title,url = bf.get_vedio_info()
 # title = re.sub(r'[\/:*?"<>|]', '-', title['title'])
 filename = title + '.mp4'
 print(filename)
+print(url)
 opener = urllib.request.build_opener()
 opener.addheaders = [('Origin', 'https://www.bilibili.com'),
                         ('Referer', url),
                         ('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36')]
-urllib.request.install_opener(opener)
-urllib.request.urlretrieve(url, filename)
+# urllib.request.install_opener(opener)
+# urllib.request.urlretrieve(url, filename)
 
 # print(title)
 # print(url)
