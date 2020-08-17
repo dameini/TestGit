@@ -93,6 +93,8 @@ class videoFile():
         urllib.request.install_opener(opener)
         urllib.request.urlretrieve(url=video_url, filename=video_filename,reporthook = self.schedule)
         urllib.request.urlretrieve(url=audio_url, filename=audio_filename,reporthook = self.schedule)
+        # uu= 'https://vod.fulixmi.cn/public/videos/5f391e1ce9184837ebc9834b/index1.ts'
+        # urllib.request.urlretrieve(url=uu, filename=audio_filename,reporthook = self.schedule)
 
     def getname(self):
         return {
