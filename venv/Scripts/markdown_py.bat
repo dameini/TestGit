@@ -1,0 +1,1 @@
+@"E:\Project\TestPy\testt\venv\Scripts\python.exe" "E:\Project\TestPy\testt\venv\Scripts\markdown_py" %*
