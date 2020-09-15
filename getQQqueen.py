@@ -75,6 +75,5 @@ def get_shuoshuo(driver):
         # driver.quit()
 
 
-drive = login('1029177123', 'mjp!((&114', '1029177123')
-# drive = login('1040295977', 'sj122048', '1040295977')
+drive = login('QQ号', 'QQ密码', 'QQ号')
 get_shuoshuo(drive)

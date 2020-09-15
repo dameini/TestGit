@@ -75,9 +75,9 @@ def send_email(sender, receiver, msg):
     smtp.connect(smtpserver)
 
     # 发件人邮箱的用户名和授权码（不是登陆邮箱的密码）
-    username = '1029177123'
+    username = 'QQ号码'
     # 邮箱授权码
-    password = 'qytwreztbqxjbebb'
+    password = 'qytwreztbqxjbebb'  # 从邮箱设置查看授权码
     # 登录到邮件服务器
     smtp.login(username, password)
 
@@ -99,7 +99,7 @@ if chengshi:
     # msg1 = msg.add_row(jint + msg)
     # print(msg1)
     sender = input('输入发件人邮箱')
-    send_email('1101165851@qq.com', tq)
+    send_email('目标邮箱', tq)
 else:
     url = "https://tianqi.so.com/weather/101270102"  # 龙泉
     tq = get_tianqi(url)
